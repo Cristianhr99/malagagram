@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Generar imágenes optimizadas",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "New-Item -ItemType Directory -Force -Path assets/img | Out-Null; Get-ChildItem assets/raw/*.jpg | ForEach-Object { magick $_.FullName -resize 400x -strip -quality 82 ('assets/img/' + $_.BaseName + '-mobile.jpg'); magick $_.FullName -resize 1000x -strip -quality 85 ('assets/img/' + $_.BaseName + '-desktop.jpg') }"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

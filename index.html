@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="MálagaGram: galería visual de pueblos, playas, monumentos y gastronomía de la provincia de Málaga. Inspiración para tu próxima escapada por la Costa del Sol y sus comarcas.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MálagaGram | La Málaga que merece ser vista">
+  <meta property="og:description" content="Descubre Ronda, Nerja, Frigiliana, Antequera y otros municipios de Málaga en una galería visual pensada para inspirar tu viaje.">
+  <meta property="og:image" content="assets/img/malaga-desktop.jpg">
+  <title>MálagaGram | La Málaga que merece ser vista</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <span class="cabecera__logo" aria-hidden="true">MG</span>
+    <h1>MálagaGram</h1>
+    <p class="cabecera__lema">La provincia de Málaga, de un vistazo</p>
+  </header>
+
+  <nav class="navegacion" aria-label="Menú principal">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#pueblos">Pueblos</a></li>
+      <li><a href="#guias">Guías</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main class="principal" id="inicio">
+    <section class="intro" aria-labelledby="titulo-intro">
+      <h2 id="titulo-intro">Inspírate con Málaga</h2>
+      <p>Ocho paradas por la provincia: historia, costa, naturaleza y buena comida. Pasa el ratón por cada foto o usa el teclado para descubrir el lugar.</p>
+    </section>
+
+    <section class="galeria" id="pueblos" aria-label="Galería de municipios de Málaga">
+      <article class="tarjeta" id="pueblo-malaga" data-id="malaga">
+        <figure class="tarjeta__media">
+          <picture>
+            <source media="(width <= 600px)" srcset="assets/img/malaga-mobile.jpg">
+            <img src="assets/img/malaga-desktop.jpg" width="1000" height="666" loading="lazy" alt="Vista de la Alcazaba de Málaga desde el monte Gibralfaro">
+          </picture>
+          <figcaption class="capa">
+            <p class="capa__texto">La Alcazaba vigila la ciudad desde el centro. Debajo están el teatro romano y las calles del casco antiguo.</p>
+            <ul class="capa__iconos">
+              <li><button class="icono icono--like" type="button" aria-label="Me gusta Málaga" aria-pressed="false"><span class="corazon-vacio" aria-hidden="true">♡</span><span class="corazon-lleno" aria-hidden="true">♥</span></button></li>
+              <li><a class="icono icono--web" href="https://www.malaga.eu/" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Málaga">↗</a></li>
+            </ul>
+          </figcaption>
+        </figure>
+        <h3>Málaga capital</h3>
+        <p class="tarjeta__comarca">Comarca metropolitana · Alcazaba, Picasso y pescaíto</p>
+        <input class="guardar-check" type="checkbox" id="guardar-malaga">
+        <label class="boton-guardar" for="guardar-malaga"><span class="txt-guardar">Guardar</span><span class="txt-guardado">Guardado ✓</span></label>
+      </article>
+
+      <article class="tarjeta" id="pueblo-ronda" data-id="ronda">
+        <figure class="tarjeta__media">
+          <picture>
+            <source media="(width <= 600px)" srcset="assets/img/ronda-mobile.jpg">
+            <img src="assets/img/ronda-desktop.jpg" width="1000" height="508" loading="lazy" alt="Puente Nuevo de Ronda sobre el tajo de la ciudad">
+          </picture>
+          <figcaption class="capa">
+            <p class="capa__texto">El Puente Nuevo cruza el tajo y separa la Ronda antigua de la nueva. Una de las estampas más conocidas de Andalucía.</p>
+            <ul class="capa__iconos">
+              <li><button class="icono icono--like" type="button" aria-label="Me gusta Ronda" aria-pressed="false"><span class="corazon-vacio" aria-hidden="true">♡</span><span class="corazon-lleno" aria-hidden="true">♥</span></button></li>
+              <li><a class="icono icono--web" href="https://www.ronda.es/" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Ronda">↗</a></li>
+            </ul>
+          </figcaption>
+        </figure>
+        <h3>Ronda</h3>
+        <p class="tarjeta__comarca">Serranía de Ronda · Puente Nuevo y plaza de toros</p>
+        <input class="guardar-check" type="checkbox" id="guardar-ronda">
+        <label class="boton-guardar" for="guardar-ronda"><span class="txt-guardar">Guardar</span><span class="txt-guardado">Guardado ✓</span></label>
+      </article>
+
+      <article class="tarjeta" id="pueblo-nerja" data-id="nerja">
+        <figure class="tarjeta__media">
+          <picture>
+            <source media="(width <= 600px)" srcset="assets/img/nerja-mobile.jpg">
+            <img src="assets/img/nerja-desktop.jpg" width="1000" height="691" loading="lazy" alt="Vista al mar desde el Balcón de Europa de Nerja">
+          </picture>
+          <figcaption class="capa">
+            <p class="capa__texto">Desde el Balcón de Europa se ven las cuevas y la costa. Nerja es el punto perfecto para combinar playa y naturaleza.</p>
+            <ul class="capa__iconos">
+              <li><button class="icono icono--like" type="button" aria-label="Me gusta Nerja" aria-pressed="false"><span class="corazon-vacio" aria-hidden="true">♡</span><span class="corazon-lleno" aria-hidden="true">♥</span></button></li>
+              <li><a class="icono icono--web" href="https://www.nerja.es/" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Nerja">↗</a></li>
+            </ul>
+          </figcaption>
+        </figure>
+        <h3>Nerja</h3>
+        <p class="tarjeta__comarca">Costa del Sol oriental · Balcón de Europa y cuevas</p>
+        <input class="guardar-check" type="checkbox" id="guardar-nerja">
+        <label class="boton-guardar" for="guardar-nerja"><span class="txt-guardar">Guardar</span><span class="txt-guardado">Guardado ✓</span></label>
+      </article>
+
+      <article class="tarjeta" id="pueblo-marbella" data-id="marbella">
+        <figure class="tarjeta__media">
+          <picture>
+            <source media="(width <= 600px)" srcset="assets/img/marbella-mobile.jpg">
+            <img src="assets/img/marbella-desktop.jpg" width="1000" height="1334" loading="lazy" alt="Calle del casco antiguo de Marbella">
+          </picture>
+          <figcaption class="capa">
+            <p class="capa__texto">En el casco antiguo de Marbella quedan azulejos, patios y tiendas pequeñas. Muy lejos del ruido de la costa.</p>
+            <ul class="capa__iconos">
+              <li><button class="icono icono--like" type="button" aria-label="Me gusta Marbella" aria-pressed="false"><span class="corazon-vacio" aria-hidden="true">♡</span><span class="corazon-lleno" aria-hidden="true">♥</span></button></li>
+              <li><a class="icono icono--web" href="https://www.marbella.es/" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Marbella">↗</a></li>
+            </ul>
+          </figcaption>
+        </figure>
+        <h3>Marbella</h3>
+        <p class="tarjeta__comarca">Costa del Sol · Casco antiguo y paseo marítimo</p>
+        <input class="guardar-check" type="checkbox" id="guardar-marbella">
+        <label class="boton-guardar" for="guardar-marbella"><span class="txt-guardar">Guardar</span><span class="txt-guardado">Guardado ✓</span></label>
+      </article>
+
+      <article class="tarjeta" id="pueblo-antequera" data-id="antequera">
+        <figure class="tarjeta__media">
+          <picture>
+            <source media="(width <= 600px)" srcset="assets/img/antequera-mobile.jpg">
+            <img src="assets/img/antequera-desktop.jpg" width="1000" height="666" loading="lazy" alt="Alcazaba de Antequera y campo de la ciudad">
+          </picture>
+          <figcaption class="capa">
+            <p class="capa__texto">Antequera guarda la alcazaba, los dólmenes y la Peña de los Enamorados.</p>
+            <ul class="capa__iconos">
+              <li><button class="icono icono--like" type="button" aria-label="Me gusta Antequera" aria-pressed="false"><span class="corazon-vacio" aria-hidden="true">♡</span><span class="corazon-lleno" aria-hidden="true">♥</span></button></li>
+              <li><a class="icono icono--web" href="https://www.antequera.es/" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Antequera">↗</a></li>
+            </ul>
+          </figcaption>
+        </figure>
+        <h3>Antequera</h3>
+        <p class="tarjeta__comarca">Valle de Guadalhorce · Dólmenes y vino de Málaga</p>
+        <input class="guardar-check" type="checkbox" id="guardar-antequera">
+        <label class="boton-guardar" for="guardar-antequera"><span class="txt-guardar">Guardar</span><span class="txt-guardado">Guardado ✓</span></label>
+      </article>
+
+      <article class="tarjeta" id="pueblo-frigiliana" data-id="frigiliana">
+        <figure class="tarjeta__media">
+          <picture>
+            <source media="(width <= 600px)" srcset="assets/img/frigiliana-mobile.jpg">
+            <img src="assets/img/frigiliana-desktop.jpg" width="1000" height="750" loading="lazy" alt="Calles blancas de Frigiliana con la sierra al fondo">
+          </picture>
+          <figcaption class="capa">
+            <p class="capa__texto">Calles blancas, balcones con flores y vistas a la sierra. Frigiliana es uno de los pueblos más bonitos de la provincia.</p>
+            <ul class="capa__iconos">
+              <li><button class="icono icono--like" type="button" aria-label="Me gusta Frigiliana" aria-pressed="false"><span class="corazon-vacio" aria-hidden="true">♡</span><span class="corazon-lleno" aria-hidden="true">♥</span></button></li>
+              <li><a class="icono icono--web" href="https://www.frigiliana.es/" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Frigiliana">↗</a></li>
+            </ul>
+          </figcaption>
+        </figure>
+        <h3>Frigiliana</h3>
+        <p class="tarjeta__comarca">Axarquía · Pueblo blanco y miel</p>
+        <input class="guardar-check" type="checkbox" id="guardar-frigiliana">
+        <label class="boton-guardar" for="guardar-frigiliana"><span class="txt-guardar">Guardar</span><span class="txt-guardado">Guardado ✓</span></label>
+      </article>
+
+      <article class="tarjeta" id="pueblo-caminito" data-id="caminito">
+        <figure class="tarjeta__media">
+          <picture>
+            <source media="(width <= 600px)" srcset="assets/img/caminito-mobile.jpg">
+            <img src="assets/img/caminito-desktop.jpg" width="1000" height="667" loading="lazy" alt="Pasarela del Caminito del Rey sobre la garganta de Ardales">
+          </picture>
+          <figcaption class="capa">
+            <p class="capa__texto">El Caminito del Rey recorre la garganta del Guadalhorce entre paredes de piedra. Reserva entrada antes de ir.</p>
+            <ul class="capa__iconos">
+              <li><button class="icono icono--like" type="button" aria-label="Me gusta el Caminito del Rey" aria-pressed="false"><span class="corazon-vacio" aria-hidden="true">♡</span><span class="corazon-lleno" aria-hidden="true">♥</span></button></li>
+              <li><a class="icono icono--web" href="https://www.ardales.es/" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Ardales">↗</a></li>
+            </ul>
+          </figcaption>
+        </figure>
+        <h3>Caminito del Rey</h3>
+        <p class="tarjeta__comarca">Ardales · Pasarela y garganta del Guadalhorce</p>
+        <input class="guardar-check" type="checkbox" id="guardar-caminito">
+        <label class="boton-guardar" for="guardar-caminito"><span class="txt-guardar">Guardar</span><span class="txt-guardado">Guardado ✓</span></label>
+      </article>
+
+      <article class="tarjeta" id="pueblo-torremolinos" data-id="torremolinos">
+        <figure class="tarjeta__media">
+          <picture>
+            <source media="(width <= 600px)" srcset="assets/img/torremolinos-mobile.jpg">
+            <img src="assets/img/torremolinos-desktop.jpg" width="1000" height="721" loading="lazy" alt="Playa de la Carihuela en Torremolinos">
+          </picture>
+          <figcaption class="capa">
+            <p class="capa__texto">La Carihuela conserva el sabor de los pescadores de Torremolinos. Aquí nacen los espetos de sardinas.</p>
+            <ul class="capa__iconos">
+              <li><button class="icono icono--like" type="button" aria-label="Me gusta Torremolinos" aria-pressed="false"><span class="corazon-vacio" aria-hidden="true">♡</span><span class="corazon-lleno" aria-hidden="true">♥</span></button></li>
+              <li><a class="icono icono--web" href="https://www.torremolinos.es/" target="_blank" rel="noopener noreferrer" aria-label="Web oficial de Torremolinos">↗</a></li>
+            </ul>
+          </figcaption>
+        </figure>
+        <h3>Torremolinos</h3>
+        <p class="tarjeta__comarca">Costa del Sol · La Carihuela y espetos</p>
+        <input class="guardar-check" type="checkbox" id="guardar-torremolinos">
+        <label class="boton-guardar" for="guardar-torremolinos"><span class="txt-guardar">Guardar</span><span class="txt-guardado">Guardado ✓</span></label>
+      </article>
+    </section>
+  </main>
+
+  <aside class="lateral" id="guias" aria-label="Guías de la provincia">
+    <h2>Explora por lugar</h2>
+    <ul>
+      <li><a href="#pueblo-malaga">Málaga capital</a></li>
+      <li><a href="#pueblo-ronda">Ronda</a></li>
+      <li><a href="#pueblo-nerja">Nerja</a></li>
+      <li><a href="#pueblo-marbella">Marbella</a></li>
+      <li><a href="#pueblo-antequera">Antequera</a></li>
+      <li><a href="#pueblo-frigiliana">Frigiliana</a></li>
+      <li><a href="#pueblo-caminito">Caminito del Rey</a></li>
+      <li><a href="#pueblo-torremolinos">Torremolinos</a></li>
+    </ul>
+    <h2>Imprescindibles</h2>
+    <p>Historia en la Alcazaba y Ronda, costa en Nerja y Torremolinos, sierra en el Caminito del Rey. Para comer: espetos, gazpacho y vino de Málaga.</p>
+  </aside>
+
+  <footer class="pie" id="contacto">
+    <p>MálagaGram · Práctica de HTML5 y CSS3 · Imágenes de Wikimedia Commons</p>
+    <p><a href="https://turismo.malaga.eu/" target="_blank" rel="noopener noreferrer">Turismo de Málaga</a></p>
+  </footer>
+</body>
+</html>
